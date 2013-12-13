@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCD71AD7-E6F0-407D-BBCD-1F3FEF680E55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EscuelaPrimaria</RootNamespace>
+    <AssemblyName>EscuelaPrimaria</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\Jorge Antonio\Desktop\Nueva carpeta %287%29\p3_alumnos-master\alumnos\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="libstetic">
+      <HintPath>C:\Program Files\Xamarin Studio\AddIns\MonoDevelop.GtkCore\libstetic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\EscuelaPrimaria2.png">
+      <Link>Imagenes\EscuelaPrimaria2.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\ColorAzul6.png">
+      <Link>Imagenes\ColorAzul6.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Amarillo.png">
+      <Link>Imagenes\Amarillo.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\RedBajito.png">
+      <Link>Imagenes\RedBajito.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\materias.png">
+      <Link>Imagenes\materias.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Cursos.png">
+      <Link>Imagenes\Cursos.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Pagos.png">
+      <Link>Imagenes\Pagos.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\EscuelaPrimaria3.png">
+      <Link>Imagenes\EscuelaPrimaria3.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\DatPer.png">
+      <Link>Imagenes\DatPer.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Coordi.png">
+      <Link>Imagenes\Coordi.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Imagen1.png">
+      <Link>Imagenes\Imagen1.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\nuevoAlumno.png">
+      <Link>Imagenes\nuevoAlumno.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\nuevoMaestro.png">
+      <Link>Imagenes\nuevoMaestro.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Imagen2.png">
+      <Link>Imagenes\Imagen2.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\nuevoPuesto.png">
+      <Link>Imagenes\nuevoPuesto.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\ColorAzul.png">
+      <Link>Imagenes\ColorAzul.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\editarAlumno.png">
+      <Link>Imagenes\editarAlumno.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\RojoBajito.png">
+      <Link>Imagenes\RojoBajito.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\NominaPago.png">
+      <Link>Imagenes\NominaPago.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Nomina.png">
+      <Link>Imagenes\Nomina.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Pago.png">
+      <Link>Imagenes\Pago.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\Materia.png">
+      <Link>Imagenes\Materia.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\curso.png">
+      <Link>Imagenes\curso.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\GradoGrupo.png">
+      <Link>Imagenes\GradoGrupo.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\EditarProfesor.png">
+      <Link>Imagenes\EditarProfesor.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\EditTra.png">
+      <Link>Imagenes\EditTra.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\imágenes\FondoGrado.png">
+      <Link>Imagenes\FondoGrado.png</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\MainWindow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Principal.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Principal.cs" />
+    <Compile Include="Alumnos.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Alumnos.cs" />
+    <Compile Include="Profesor.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Profesor.cs" />
+    <Compile Include="Cordinacion.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Cordinacion.cs" />
+    <Compile Include="NuevoAlumno.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.NuevoAlumno.cs" />
+    <Compile Include="NuevoProfesor.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.NuevoProfesor.cs" />
+    <Compile Include="NuevoCordinacion.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.NuevoCordinacion.cs" />
+    <Compile Include="EditarAlumno.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.EditarAlumno.cs" />
+    <Compile Include="Materia.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Materia.cs" />
+    <Compile Include="Pagos.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Pagos.cs" />
+    <Compile Include="Grado.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Grado.cs" />
+    <Compile Include="Cursos.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Cursos.cs" />
+    <Compile Include="EditarProfesor.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.EditarProfesor.cs" />
+    <Compile Include="EditarCoordinacion.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.EditarCoordinacion.cs" />
+    <Compile Include="Nomina.cs" />
+    <Compile Include="gtk-gui\EscuelaPrimaria.Nomina.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="Properties\MySql.Data.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
+  </ItemGroup>
+</Project>
